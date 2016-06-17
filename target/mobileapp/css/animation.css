@@ -1,0 +1,45 @@
+@-webkit-keyframes eyes {
+	50%{
+		left: 0;
+	}
+	100% {
+		right: 0;
+	}
+}
+@-moz-keyframes eyes {
+	50%{
+		left: 0;
+	}
+	100% {
+		right: 0;
+	}
+}
+@-ms-keyframes eyes {
+	50%{
+		left: 0;
+	}
+	100% {
+		right: 0;
+	}
+}
+@-o-keyframes eyes {
+	50%{
+		left: 0;
+	}
+	100% {
+		right: 0;
+	}
+}
+@keyframes eyes {
+	50%{
+		left: 0;
+	}
+	100% {
+		right: 0;
+	}
+}
+
+
+
+
+
