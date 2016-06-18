@@ -136,8 +136,10 @@ footer a {
 	align-items:center;
 }
 footer a.curTab {
-	background: #ccc;
+	color: #FD58C0;
+	/*background: #ccc;*/
 }
+
 
 .content {
 	position: absolute;
