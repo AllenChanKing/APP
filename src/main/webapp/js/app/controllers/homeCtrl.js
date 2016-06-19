@@ -1,5 +1,6 @@
 define(['appModule'],function(app){
-    app.controller('homeCtrl', ['$scope','$routeParams', function($scope,$routeParams){
-        $scope.name="123";
-    }]);
+    app.register
+        .controller('homeCtrl', function($scope){
+            $scope.name="rtgyhjk";
+        });
 });

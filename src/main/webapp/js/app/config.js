@@ -23,6 +23,6 @@ requirejs.config({
     }
 });
 
-requirejs(['angular','flexiable','app-route','mobileAppCtrl','homeCtrl'], function(angular){
+requirejs(['angular','flexiable','app-route','mobileAppCtrl'], function(angular){
     angular.bootstrap(document,['MobileApp']);
 });
