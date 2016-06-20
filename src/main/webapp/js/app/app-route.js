@@ -17,7 +17,7 @@ define(['appModule','require','angular-route'],function(app,require) {
                 resolve: {
                     loadCtrl: ["$q", function($q) {
                         var deferred = $q.defer();
-                        require(['homeCtr1'], function() {
+                        require(['homeCtrl'], function() {
                             deferred.resolve();
                         });
                         return deferred.promise;
