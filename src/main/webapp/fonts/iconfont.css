@@ -14,11 +14,9 @@
   -webkit-text-stroke-width: 0.2px;
   -moz-osx-font-smoothing: grayscale;
 }
-
-.icon-shoppingcarselected:before { content: "\e677"; }
 .icon-share:before { content: "\e600"; }
 .icon-shoppingcar:before { content: "\e603"; }
-.icon-shoppingcarselected1:before { content: "\e604"; }
+.icon-shoppingcarselected:before { content: "\e604"; }
 .icon-userselected:before { content: "\e605"; }
 .icon-user:before { content: "\e606"; }
 .icon-home:before { content: "\e607"; }
