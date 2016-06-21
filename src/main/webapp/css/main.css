@@ -14,17 +14,21 @@ body {
 	background: #eee;
 }
 
-a {
+a{
 	text-decoration: none;
 	-webkit-tap-highlight-color:rgba(0,0,0,0);
 	color: #555;
+	font-size: 12px;
 }
 
 img {
 	-webkit-touch-callout: none;
 }
 .icon {
-	font-size: 18px;
+	font-size: 24px;
+}
+a.tabselected {
+	color: #FF4E00;
 }
 header,
 footer {
@@ -119,11 +123,11 @@ footer a {
 	-o-flex-flow: column nowrap;
 	flex-flow: column nowrap;
 	order: 1;
-	-webkit-flex: 1 1 20%;
-	-moz-flex: 1 1 20%;
-	-ms-flex: 1 1 20%;
-	-o-flex: 1 1 20%;
-	flex: 1 1 20%;
+	-webkit-flex: 1 1 25%;
+	-moz-flex: 1 1 25%;
+	-ms-flex: 1 1 25%;
+	-o-flex: 1 1 25%;
+	flex: 1 1 25%;
 	-webkit-justify-content: center;
 	-webkit-align-items:center;
 	-moz-justify-content: center;
