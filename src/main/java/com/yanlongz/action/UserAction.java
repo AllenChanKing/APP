@@ -40,7 +40,7 @@ public class UserAction {
         }catch(Exception e){
             result=new ResultData<User>(false,e.getMessage());
         }
-        return result;//·µ»ØjsonÊý¾Ý
+        return result;//è¿”å›žjson
     }
 
     //ModalAndView
@@ -48,6 +48,6 @@ public class UserAction {
     public String users(Model model){
         List<User> userList=userService.getUserList();
         model.addAttribute("userList",userList);
-        return "users";//springmvcÖÐÅäÖÃµÄÂ·¾¶+users.ºó×º
+        return "users";//springmvcï¿½ï¿½ï¿½ï¿½ï¿½Ãµï¿½Â·ï¿½ï¿½+users.ï¿½ï¿½×º
     }
 }
