@@ -10,7 +10,8 @@ requirejs.config({
         'app-route':'../js/app/app-route',
         'appModule':'../js/public/appModule',
         'mobileAppCtrl':'../js/app/controllers/mobileAppCtrl',
-        'homeCtrl':'../js/app/controllers/homeCtrl'
+        'homeCtrl':'../js/app/controllers/homeCtrl',
+        'homeService':'../js/app/services/homeService'
     },
     shim:{
         "angular":{

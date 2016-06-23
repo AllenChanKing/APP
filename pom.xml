@@ -123,6 +123,19 @@
       <artifactId>mysql-connector-java</artifactId>
       <version>5.1.29</version>
     </dependency>
+
+    <!--springmvc返回json数据，以来json包-->
+    <dependency>
+      <groupId>org.codehaus.jackson</groupId>
+      <artifactId>jackson-core-asl</artifactId>
+      <version>1.8.5</version>
+    </dependency>
+    <dependency>
+      <groupId>org.codehaus.jackson</groupId>
+      <artifactId>jackson-mapper-asl</artifactId>
+      <version>1.8.5</version>
+    </dependency>
+
   </dependencies>
 
   <!--&lt;!&ndash; javaee-api包 注意和项目使用的JDK版本对应 &ndash;&gt;-->

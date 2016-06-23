@@ -27,6 +27,25 @@ public class UserAction {
     @Autowired
     private UserService userService;
 
+    @RequestMapping(value="/list1",
+            method = RequestMethod.GET,
+            produces = {"applicaiton/json;charset=UTF-8"})
+    @ResponseBody
+    public ResultData<List<User>> user(){
+        System.out.println("进入后台");
+        ResultData<List<User>> result;
+        try{
+            List<User> users=userService.getUserList();
+            result=new ResultData<List<User>>(true,users);
+            System.out.println("执行成功");
+        }catch(Exception e){
+            result=new ResultData<List<User>>(false,e.getMessage());
+            System.out.println("执行失败："+e.getMessage());
+        }
+        System.out.println("返回数据："+result);
+        return result;
+    }
+
     //AJAX JSON
     @RequestMapping(value="/{userId}",
             method = RequestMethod.POST,
@@ -48,6 +67,8 @@ public class UserAction {
     public String users(Model model){
         List<User> userList=userService.getUserList();
         model.addAttribute("userList",userList);
-        return "users";//springmvc�����õ�·��+users.��׺
+        return "users";//springmvc
     }
+
+
 }

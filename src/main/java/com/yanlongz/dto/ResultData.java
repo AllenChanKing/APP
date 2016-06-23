@@ -3,7 +3,7 @@ package com.yanlongz.dto;
 /**
  * Created by Administrator on 2016/6/20.
  */
-//所有返回返回数据对象，恩装json结果
+//鐢ㄤ簬灏佽杩斿洖鏁版嵁
 public class ResultData<T> {
     private boolean isSuccess;
     private T data;

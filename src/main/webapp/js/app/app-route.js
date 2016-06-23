@@ -1,9 +1,9 @@
 define(['appModule','require','angular-route'],function(app,require) {
     app.config(function($controllerProvider,$compileProvider,$filterProvider,$provide){
         app.register = {
-            //µÃµ½$controllerProviderµÄÒıÓÃ
+            //æ³¨å†Œcontroller
             controller : $controllerProvider.register,
-            //Í¬ÑùµÄ£¬ÕâÀïÒ²¿ÉÒÔ±£´ædirective£¯filter£¯serviceµÄÒıÓÃ
+            //æ³¨å†Œç»„ä»¶ è¿‡æ»¤å™¨ æœåŠ¡
             directive: $compileProvider.directive,
             filter: $compileProvider.register,
             service: $provide.service
@@ -45,9 +45,6 @@ define(['appModule','require','angular-route'],function(app,require) {
             })
             .when('/myCat', {
                 templateUrl: 'myCat.html'
-            })
-            .when('/more', {
-                templateUrl: 'more.html'
             })
             .otherwise({redirectTo: '/'});
     }]);

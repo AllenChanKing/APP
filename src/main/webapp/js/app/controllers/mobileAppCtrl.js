@@ -1,6 +1,5 @@
 define(['appModule'],function(app){
-    app.controller('MobileAppCtrl', ['$scope', function($scope,$stateParams){
-
+    app.controller('MobileAppCtrl', ['$scope', function($scope,$routeParams){
         $scope.appTabs=[
             {tabName:"首页",target:"#/home",tabClass:"icon icon-home",selectedClass:"icon icon-homeselected",isSelected:false},
             {tabName:'物流',target:'#/logistics',tabClass:'icon icon-logistics',selectedClass:'icon icon-logisticsselected',isSelected:false},

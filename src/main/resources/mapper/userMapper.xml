@@ -12,4 +12,7 @@
     <select id="selectUserById" parameterType="int" resultMap="BaseResultMap">
         SELECT * FROM t_user WHERE USER_ID = #{userId}
     </select>
+    <select id="getUserList"  resultMap="BaseResultMap">
+        SELECT * FROM t_user
+    </select>
 </mapper>
