@@ -1,7 +1,5 @@
 define(['appModule','homeService'],function(app){
     app.register.controller('homeCtrl', function($scope,homeService,$routeParams){
-        //console.log($routeParams.id);
-
         $scope.getAllUsers=function(){
             var params={
                 method : 'get',
@@ -11,7 +9,7 @@ define(['appModule','homeService'],function(app){
             };
 
             homeService.getAllUsers(params).then(function(data){
-                console.log('-->'+data.toString());
+                console.log('-->'+angular.toJson(data));
             },function(error){
                 console.log('返回异常');
             });

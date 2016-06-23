@@ -1,6 +1,8 @@
 package com.yanlongz.action;
 
+import jdk.nashorn.internal.parser.JSONParser;
 import org.apache.log4j.spi.LoggerFactory;
+import org.codehaus.jackson.JsonParser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -28,14 +30,16 @@ public class UserAction {
     private UserService userService;
 
     @RequestMapping(value="/list1",
-            method = RequestMethod.GET,
-            produces = {"applicaiton/json;charset=UTF-8"})
+            method = RequestMethod.GET)
     @ResponseBody
     public ResultData<List<User>> user(){
         System.out.println("进入后台");
         ResultData<List<User>> result;
         try{
             List<User> users=userService.getUserList();
+            for(User user:users){
+                System.out.println("----"+user.getUserName());
+            }
             result=new ResultData<List<User>>(true,users);
             System.out.println("执行成功");
         }catch(Exception e){
